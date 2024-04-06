@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportFragmentManager.beginTransaction().replace(R.id.main_fl, HomeFragment()).commitAllowingStateLoss()
-
+        // this makes the icon not tinted
         binding.mainBottomNav.itemIconTintList = null
         binding.mainBottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
